@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image:url("../imgs/hong_kong_skyline_green_building_in_asia.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.container div {
+  position: absolute;
+}
+
+.container > div:nth-of-type(1) , .container > div:nth-of-type(2) , .container > div:nth-last-child(2) , .container div:nth-last-child(1) {
+  padding: 15px;
+  letter-spacing: -1px;
+}
+
+.container div:nth-of-type(1) {
+  color: white;
+  background-color: #525A62;
+  left: 360px;
+  top: 203px;
+}
+
+.container div:nth-of-type(2) {
+  color: #525A62;
+  background-color: white;
+  left: 360px;
+  top: 255px;
+  z-index: 4;
+}
+
+.container div:nth-last-child(2) {
+  color: #525A62;
+  background-color: white;
+  left: 1015px;
+  top: 330px;
+  z-index: 4;
+}
+
+.container div:nth-last-child(1) {
+  color: #525A62;
+  background-color: #FFEB00;
+  left: 975px;
+  top: 381px;
+  z-index: 4;
+}
+
+
+.container .icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container div:nth-of-type(3) {
+  width: 180px;
+  height: 180px;
+  z-index: 3;
+  top: 270px;
+  left: 460px;
+  background-color: #515961;
+  color: white;
+  font-size: 60px;
+} 
+
+.container div:nth-of-type(4) {
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+  top: 220px;
+  left: 600px;
+  background-color: #FFEB00;
+  color: #484C55;
+  font-size: 70px;
+} 
+
+.container div:nth-of-type(5) {
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  top: 245px;
+  left: 815px;
+  background-color: #515961;
+  color: white;
+  font-size: 60px;
+}
+
+.container div:nth-of-type(6) {
+  width: 170px;
+  height: 170px;
+  z-index: 2;
+  font-size: 60px;
+  top: 190px;
+  left: 970px;
+  background-color: #FFEB00;
+  color: #484C55;
+}
